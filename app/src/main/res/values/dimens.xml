@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="ListSize">300dp</dimen>
+    <dimen name="divSize">3dp</dimen>
 </resources>

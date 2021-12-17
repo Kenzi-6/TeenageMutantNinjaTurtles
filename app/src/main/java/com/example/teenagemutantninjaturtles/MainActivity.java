@@ -2,9 +2,15 @@ package com.example.teenagemutantninjaturtles;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,17 +19,26 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        ListView heroesList = (ListView) findViewById(R.id.heroesList);
+        ListView heroesList = findViewById(R.id.heroesList);
 
-        // получаем ресурс
-        String[] heroes = getResources().getStringArray(R.array.heroes);
+        String[] heroesV = getResources().getStringArray(R.array.heroes);
 
-        // создаем адаптер
-        ArrayAdapter<String> adapter = new ArrayAdapter(this,
-                android.R.layout.simple_list_item_1, heroes);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, heroesV);
 
-        // устанавливаем для списка адаптер
         heroesList.setAdapter(adapter);
+
+        heroesList.setOnItemClickListener(new AdapterView.OnItemClickListener() { //слушатели
+            @Override
+            public void onItemClick(AdapterView<?> parent, View itemClicked, int position, long id){
+
+                String selectedItem = heroesV[position];
+                Intent intentInfo = new Intent(MainActivity.this, MainActivity2.class);
+                intentInfo.putExtra("hero", selectedItem);
+                startActivity(intentInfo);
+                }
+            });
     }
 }

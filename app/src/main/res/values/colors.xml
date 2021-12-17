@@ -8,4 +8,5 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="toxic">#05FF09</color>
+    <color name="mut">#61FAFAFA</color>
 </resources>
