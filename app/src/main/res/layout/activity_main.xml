@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:entries="@array/heroes"
         android:dividerHeight="@dimen/divSize"
-        android:background="@color/mut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintLeft_toLeftOf="parent"

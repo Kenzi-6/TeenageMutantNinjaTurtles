@@ -30,15 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
         heroesList.setAdapter(adapter);
 
-        heroesList.setOnItemClickListener(new AdapterView.OnItemClickListener() { //слушатели
-            @Override
-            public void onItemClick(AdapterView<?> parent, View itemClicked, int position, long id){
+        //слушатели
+        heroesList.setOnItemClickListener((parent, itemClicked, position, id) -> {
 
-                String selectedItem = heroesV[position];
-                Intent intentInfo = new Intent(MainActivity.this, MainActivity2.class);
-                intentInfo.putExtra("hero", selectedItem);
-                startActivity(intentInfo);
-                }
+            String selectedItem = heroesV[position];
+            Intent intentInfo = new Intent(MainActivity.this, MainActivity2.class);
+            intentInfo.putExtra("hero", selectedItem);
+            startActivity(intentInfo);
             });
     }
 }

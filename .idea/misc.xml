@@ -5,11 +5,14 @@
       <map>
         <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17708333333333334" />
         <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17708333333333334" />
-        <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main2.xml" value="0.176" />
+        <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/list_toxic_text.xml" value="0.15833333333333333" />
         <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/row.xml" value="0.15833333333333333" />
         <entry key="..\:/Android/TeenageMutantNinjaTurtles/app/src/main/res/layout/textchange.xml" value="0.259375" />
+        <entry key="..\:/Users/Sanches/AndroidStudioProjects/TeenageMutantNinjaTurtles/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Sanches/AndroidStudioProjects/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/Sanches/AndroidStudioProjects/TeenageMutantNinjaTurtles/app/src/main/res/layout/activity_main2.xml" value="0.17708333333333334" />
       </map>
     </option>
   </component>
